@@ -18,7 +18,6 @@ RUN yum -y install /tmp/jdk-8-linux-x64.rpm
 RUN alternatives --install /usr/bin/java jar /usr/java/latest/bin/java 200000
 RUN alternatives --install /usr/bin/javaws javaws /usr/java/latest/bin/javaws 200000
 RUN alternatives --install /usr/bin/javac javac /usr/java/latest/bin/javac 200000
-RUN alternatives --install /usr/bin/jar jar /usr/java/latest/bin/jar 200000
 
 ENV JAVA_HOME /usr/java/latest
 
