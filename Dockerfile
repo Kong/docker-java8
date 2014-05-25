@@ -8,6 +8,7 @@ MAINTAINER Marco Palladino, marco@mashape.com
 
 # Upgrading system
 RUN yum -y upgrade
+RUN yum -y install wget
 
 # Downloading Java
 RUN wget --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.rpm" -O /tmp/jdk-8-linux-x64.rpm
